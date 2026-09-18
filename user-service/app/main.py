@@ -21,6 +21,8 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
+# Task 8.1P: small change used to trigger the Week 08 CI/CD pipeline.
+
 
 def initialise_database() -> None:
     maximum_attempts = 10
