@@ -25,6 +25,10 @@ jobs:
         uses: azure/login@v3
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
+          allow-no-subscriptions: true
+
+      - name: Set Azure subscription
+        run: az account set --subscription 37736068-842d-43b1-a86a-d8487fe12ab7
 
       - name: Get AKS credentials
         run: |
